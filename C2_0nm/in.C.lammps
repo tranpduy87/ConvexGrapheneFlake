@@ -40,16 +40,15 @@ thermo          1000
 log             1Dgra.log
 dump		1 all atom 1000 dump.reax.cho
 
-run		1000000
+run		40000000
 
 unfix 1
 fix		1 all nvt temp 1000.0 300.0 10.0  
-run		1000000
+run		400000000
 
 unfix 1
 fix		1 all nvt temp 300.0 300.0 1.0  
-run		1000000
-
+run		400000000
 
 
 
